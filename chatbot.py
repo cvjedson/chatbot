@@ -1,6 +1,6 @@
 from dotenv import load_dotenv
 import streamlit as st
-from langchain-google-genai import ChatGoogleGenerativeAI
+from langchain_google_genai import ChatGoogleGenerativeAI
 
 
 # load the env variables
