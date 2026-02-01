@@ -1,6 +1,6 @@
 from dotenv import load_dotenv
 import streamlit as st
-from langchain_groq import ChatGroq
+from langchain-google-genai import ChatGoogleGenerativeAI
 
 
 # load the env variables
@@ -24,8 +24,8 @@ for message in st.session_state.chat_history:
         st.markdown(message["content"])
 
 # llm initiate
-llm = ChatGroq(
-    model="llama-3.3-70b-versatile",
+llm = ChatGoogleGenerativeAI(
+    model="gemini-2.5-flash",
     temperature=0.0,
 )
 
